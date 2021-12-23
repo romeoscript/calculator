@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <center>
+   <div class="contain" id="contain">
+       <div class="theme" onclick="dark()" id="darkmode"><i class="icon fa fa-moon-o"></i></div>
+       <div>
+           <input type="text" class="sult" id="sult" readonly>
+        <input type="button" value="C" id="clea" onclick="clea()">
+        </div>
+        <div>
+        <input type="button" value="1" onclick="cal(1)" >
+        <input type="button" value="2" onclick="cal(2)">
+        <input type="button" value="3" onclick="cal(3)">
+        <input type="button" value="+" onclick="cal('+')">
+         </div>
+        <div>
+        <input type="button" value="4" onclick="cal(4)">
+        <input type="button" value="5" onclick="cal(5)">
+        <input type="button" value="6" onclick="cal(6)">
+        <input type="button" value="-" onclick="cal('-')">
+     </div>
+     <div>
+        <input type="button" value="7" onclick="cal(7)">
+        <input type="button" value="8" onclick="cal(8)">
+        <input type="button" value="9" onclick="cal(9)">
+        <input type="button" value="*" onclick="cal('*')">
+        </div>
+        <div>
+        <input type="button" value="." onclick="cal('.')">
+        <input type="button" value="0" onclick="cal(0)">
+        <input type="button" value="/" onclick="cal('/')">
+        <input type="button" value="=" onclick="result.value = eval(result.value)">
+        </div>
+   </div>
+</center> 
+   <script src="app.js" ></script>
+</body>
+</html>
